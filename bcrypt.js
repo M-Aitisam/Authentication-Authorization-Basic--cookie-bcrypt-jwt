@@ -18,14 +18,14 @@ app.use(express.urlencoded({ extended: true }));
 // });
 
 // To  Decrypt Password means you  can compare the Password
-app.get("/", (req, res)=>{
-    bcrypt.compare( "password","$2b$10$SVmCl7bwyAEscosnoSFeE.bgzn0GEaiVRsh3A1Nv2kJRGr2GjSFWO" , (err, result)=>{
+// app.get("/", (req, res)=>{
+//     bcrypt.compare( "password","$2b$10$SVmCl7bwyAEscosnoSFeE.bgzn0GEaiVRsh3A1Nv2kJRGr2GjSFWO" , (err, result)=>{
        
-        res.send("Chal  rha ha");
-console.log(result);
+//         res.send("Chal  rha ha");
+// console.log(result);
 
-    })
-})
-app.listen(3000, () => {
-    console.log('Server running on port 3000');
-});
+//     })
+// })
+// app.listen(3000, () => {
+//     console.log('Server running on port 3000');
+// });
